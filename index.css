@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:  var(--Pale-blue);
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+}
+
+.container {
+  width: 455px;
+  height: 700px;
+  margin: auto;
+  background-color: white;
+  border-radius: 17px;
+}
+
+.img-header {
+  border-radius: 17px 17px 0 0;
+  width: 100%;
+}
+
+.details {
+  box-sizing: border-box;
+  height: 407px;
+  padding: 28px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-title {
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.head-title h1 {
+  color: var(--Dark-blue);
+  padding-bottom: 28px;
+}
+
+.head-title p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--Desaturated-blue);
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+
+.planner {
+  display: flex;
+  grid-gap: 20px;
+  width: 100%;
+  background-color: var(--Very-pale-blue);
+  border-radius: 11px;
+  padding: 17px 20px;
+}
+
+.img-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.planner h1 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.planner-price {
+  display: grid;
+  width: 100px;
+}
+
+.planner p {
+  font-size: 16px;
+  color: var(--Desaturated-blue);
+}
+
+.planner a {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 16px 0;
+  color: val(--Bright-blue);
+}
+
+.planner a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.confirm button {
+  width: 100%;
+  height: 50px; 
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  background-color: var(--Bright-blue);
+  box-shadow: 0px 36px 5px var(--Very-pale-blue);
+  margin-top: 33px;
+  margin-bottom: 36px;
+  
+}
+
+.confirm button:hover {
+  cursor: pointer;
+  background-color: #766cf1;
+}
+
+.cancle a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--Dark-blue);
+}
+
+.all .attribution {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.all .attribution p {
+  text-decoration: none;
+}
